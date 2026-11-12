@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" style="background:#0f172a; border-radius:12px; font-family:'Segoe UI',system-ui,-apple-system,sans-serif;">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradient -->
+    <linearGradient id="primaryGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="50%" stop-color="#ec4899" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+
+    <linearGradient id="pillGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#1d4ed8" stop-opacity="0.1" />
+    </linearGradient>
+
+    <linearGradient id="pillGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#047857" stop-opacity="0.1" />
+    </linearGradient>
+
+    <linearGradient id="pillGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#b45309" stop-opacity="0.1" />
+    </linearGradient>
+
+    <linearGradient id="pillGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#6d28d9" stop-opacity="0.1" />
+    </linearGradient>
+
+    <!-- Filters for subtle glow -->
+    <filter id="glowEffect" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulseOrb {
+      0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.35; }
+      50% { transform: scale(1.18) translate(25px, -15px); opacity: 0.65; }
+    }
+    @keyframes floatPill1 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes floatPill2 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(12px); }
+    }
+    @keyframes radarScan {
+      0% { stroke-dashoffset: 600; opacity: 0.3; }
+      50% { stroke-dashoffset: 0; opacity: 0.9; }
+      100% { stroke-dashoffset: -600; opacity: 0.3; }
+    }
+    @keyframes waveDash {
+      0% { stroke-dashoffset: 0; }
+      100% { stroke-dashoffset: 40; }
+    }
+    .pulsing-orb-1 {
+      animation: pulseOrb 7s ease-in-out infinite;
+      transform-origin: 200px 100px;
+    }
+    .pulsing-orb-2 {
+      animation: pulseOrb 9s ease-in-out infinite reverse;
+      transform-origin: 1000px 260px;
+    }
+    .pill-anim-1 { animation: floatPill1 4.5s ease-in-out infinite; }
+    .pill-anim-2 { animation: floatPill2 5.5s ease-in-out infinite; }
+    .radar-line {
+      stroke-dasharray: 120 40;
+      animation: waveDash 2s linear infinite;
+    }
+    .grid-pattern {
+      opacity: 0.12;
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="100%" height="100%" fill="url(#bgGradient)" rx="12" />
+
+  <!-- Animated Glowing Orbs in the background -->
+  <g>
+    <circle class="pulsing-orb-1" cx="180" cy="90" r="130" fill="#6366f1" filter="url(#glowEffect)" />
+    <circle class="pulsing-orb-2" cx="1020" cy="270" r="140" fill="#ec4899" filter="url(#glowEffect)" />
+    <circle cx="600" cy="180" r="160" fill="#3b82f6" opacity="0.1" filter="url(#glowEffect)" />
+  </g>
+
+  <!-- Background Grid lines for tech atmosphere -->
+  <g class="grid-pattern" stroke="#94a3b8" stroke-width="1">
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="150" y1="0" x2="150" y2="360" />
+    <line x1="300" y1="0" x2="300" y2="360" />
+    <line x1="450" y1="0" x2="450" y2="360" />
+    <line x1="600" y1="0" x2="600" y2="360" />
+    <line x1="750" y1="0" x2="750" y2="360" />
+    <line x1="900" y1="0" x2="900" y2="360" />
+    <line x1="1050" y1="0" x2="1050" y2="360" />
+  </g>
+
+  <!-- Dynamic Connecting Network Curves behind content -->
+  <g opacity="0.45">
+    <path class="radar-line" d="M 50 300 Q 300 220, 600 290 T 1150 160" fill="none" stroke="#38bdf8" stroke-width="2" />
+    <path class="radar-line" d="M 80 80 Q 400 150, 750 90 T 1120 220" fill="none" stroke="#a855f7" stroke-width="2" />
+  </g>
+
+  <!-- Top Badge Pill (Header Tag) -->
+  <g transform="translate(485, 38)">
+    <rect width="230" height="30" rx="15" fill="#1e293b" stroke="#3b82f6" stroke-width="1.2" opacity="0.9" />
+    <circle cx="16" cy="15" r="4" fill="#10b981" />
+    <text x="30" y="20" fill="#93c5fd" font-size="12" font-weight="600" letter-spacing="1.5">CURATED ECOSYSTEM</text>
+  </g>
+
+  <!-- Foreground Main Title (Guaranteed Crisp & Foreground) -->
+  <text x="600" y="118" text-anchor="middle" fill="#ffffff" font-size="36" font-weight="800" letter-spacing="-0.5">
+    Awesome Restaurant POS &amp; Table Management
+  </text>
+
+  <!-- Title Gradient Accent Bar -->
+  <rect x="420" y="134" width="360" height="4" rx="2" fill="url(#primaryGlow)" />
+
+  <!-- Subtitle -->
+  <text x="600" y="166" text-anchor="middle" fill="#cbd5e1" font-size="16" font-weight="400">
+    Cloud SaaS Leaders &bull; Open-Source Alternatives &bull; KDS &bull; Table &amp; Floor Workflows
+  </text>
+
+  <!-- Floating Dynamic Feature Pills (Foreground Layer) -->
+  <!-- Pill 1: Table Management -->
+  <g class="pill-anim-1" transform="translate(130, 215)">
+    <rect width="215" height="52" rx="10" fill="url(#pillGrad1)" stroke="#38bdf8" stroke-width="1.2" />
+    <text x="20" y="32" font-size="20">🪑</text>
+    <text x="50" y="27" fill="#ffffff" font-size="13" font-weight="700">Floor &amp; Table Maps</text>
+    <text x="50" y="42" fill="#94a3b8" font-size="11">Real-time Table Status</text>
+  </g>
+
+  <!-- Pill 2: Kitchen Display (KDS) -->
+  <g class="pill-anim-2" transform="translate(370, 215)">
+    <rect width="215" height="52" rx="10" fill="url(#pillGrad2)" stroke="#34d399" stroke-width="1.2" />
+    <text x="20" y="32" font-size="20">👨‍🍳</text>
+    <text x="50" y="27" fill="#ffffff" font-size="13" font-weight="700">Kitchen Display (KDS)</text>
+    <text x="50" y="42" fill="#94a3b8" font-size="11">Ticket &amp; Station Routing</text>
+  </g>
+
+  <!-- Pill 3: POS & Payments -->
+  <g class="pill-anim-1" transform="translate(610, 215)">
+    <rect width="215" height="52" rx="10" fill="url(#pillGrad3)" stroke="#fbbf24" stroke-width="1.2" />
+    <text x="20" y="32" font-size="20">💳</text>
+    <text x="50" y="27" fill="#ffffff" font-size="13" font-weight="700">Cloud &amp; Offline POS</text>
+    <text x="50" y="42" fill="#94a3b8" font-size="11">Dine-in, Takeout &amp; QR</text>
+  </g>
+
+  <!-- Pill 4: Open Source vs SaaS -->
+  <g class="pill-anim-2" transform="translate(850, 215)">
+    <rect width="215" height="52" rx="10" fill="url(#pillGrad4)" stroke="#c084fc" stroke-width="1.2" />
+    <text x="20" y="32" font-size="20">🌐</text>
+    <text x="50" y="27" fill="#ffffff" font-size="13" font-weight="700">SaaS &amp; FOSS Systems</text>
+    <text x="50" y="42" fill="#94a3b8" font-size="11">Self-Hosted Data Freedom</text>
+  </g>
+
+  <!-- Bottom Metric Bar -->
+  <g transform="translate(200, 310)">
+    <text x="140" y="16" text-anchor="middle" fill="#64748b" font-size="12" font-weight="500">&bull; 20+ Curated Repositories</text>
+    <text x="400" y="16" text-anchor="middle" fill="#64748b" font-size="12" font-weight="500">&bull; Detailed SaaS Pricing &amp; Market Caps</text>
+    <text x="660" y="16" text-anchor="middle" fill="#64748b" font-size="12" font-weight="500">&bull; Verified Stargazer Badges</text>
+  </g>
+</svg>
