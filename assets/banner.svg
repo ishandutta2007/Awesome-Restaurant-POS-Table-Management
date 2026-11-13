@@ -131,7 +131,7 @@
 
   <!-- Subtitle -->
   <text x="600" y="166" text-anchor="middle" fill="#cbd5e1" font-size="16" font-weight="400">
-    Cloud SaaS Leaders &bull; Open-Source Alternatives &bull; KDS &bull; Table &amp; Floor Workflows
+    Cloud SaaS Leaders &#8226; Open-Source Alternatives &#8226; KDS &#8226; Table &amp; Floor Workflows
   </text>
 
   <!-- Floating Dynamic Feature Pills (Foreground Layer) -->
@@ -169,8 +169,8 @@
 
   <!-- Bottom Metric Bar -->
   <g transform="translate(200, 310)">
-    <text x="140" y="16" text-anchor="middle" fill="#64748b" font-size="12" font-weight="500">&bull; 20+ Curated Repositories</text>
-    <text x="400" y="16" text-anchor="middle" fill="#64748b" font-size="12" font-weight="500">&bull; Detailed SaaS Pricing &amp; Market Caps</text>
-    <text x="660" y="16" text-anchor="middle" fill="#64748b" font-size="12" font-weight="500">&bull; Verified Stargazer Badges</text>
+    <text x="140" y="16" text-anchor="middle" fill="#64748b" font-size="12" font-weight="500">&#8226; 20+ Curated Repositories</text>
+    <text x="400" y="16" text-anchor="middle" fill="#64748b" font-size="12" font-weight="500">&#8226; Detailed SaaS Pricing &amp; Market Caps</text>
+    <text x="660" y="16" text-anchor="middle" fill="#64748b" font-size="12" font-weight="500">&#8226; Verified Stargazer Badges</text>
   </g>
 </svg>
