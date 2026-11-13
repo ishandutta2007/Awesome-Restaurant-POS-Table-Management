@@ -75,7 +75,7 @@ Below is the comparison of leading commercial SaaS restaurant POS and table mana
 
 ## 🟩 Open-Source Software
 
-Curated open-source restaurant POS, table management, and Kitchen Display Systems (KDS). Repositories are ranked below in descending order by GitHub Stars_Count.
+Curated open-source restaurant POS, table management, and Kitchen Display Systems (KDS). Repositories are ranked below in descending order by GitHub_Stars_Count.
 
 ### 1. Odoo POS (Restaurant Module)
 [![GitHub_Stars](https://img.shields.io/github/stars/odoo/odoo?style=social&color=white)](https://github.com/odoo/odoo/stargazers)
@@ -244,7 +244,7 @@ Contributions, feature suggestions, and new project submissions are very welcome
 
 1. Fork this repository.
 2. Create a feature branch (`git checkout -b feature/new-pos-tool`).
-3. Add the project with GitHub Stars_Badge, license, tech stack, and clear description.
+3. Add the project with GitHub_Stars_Badge, license, tech stack, and clear description.
 4. Commit your changes and open a Pull Request.
 
 Please check out our list of other awesome curated collections at **[Awesome-Awesome-Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)**.
